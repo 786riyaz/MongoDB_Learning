@@ -1,0 +1,104 @@
+[{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439011"
+  },
+  "ProductName": "Asus Rog Strix",
+  "Category": "Laptop",
+  "Brand": "Asus",
+  "Price": 1500
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439012"
+  },
+  "ProductName": "Dell UltraSharp",
+  "Category": "Monitor",
+  "Brand": "Dell",
+  "Price": 300
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439013"
+  },
+  "ProductName": "Logitech MX Keys",
+  "Category": "Keyboard",
+  "Brand": "Logitech",
+  "Price": 100
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439014"
+  },
+  "ProductName": "Razer DeathAdder",
+  "Category": "Mouse",
+  "Brand": "Razer",
+  "Price": 70
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439015"
+  },
+  "ProductName": "HP Pavilion",
+  "Category": "Laptop",
+  "Brand": "HP",
+  "Price": 1200
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439016"
+  },
+  "ProductName": "Samsung Odyssey",
+  "Category": "Monitor",
+  "Brand": "Samsung",
+  "Price": 400
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439017"
+  },
+  "ProductName": "Corsair K95",
+  "Category": "Keyboard",
+  "Brand": "Corsair",
+  "Price": 150
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439018"
+  },
+  "ProductName": "Microsoft Surface Mouse",
+  "Category": "Mouse",
+  "Brand": "Microsoft",
+  "Price": 80
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd799439019"
+  },
+  "ProductName": "Lenovo ThinkPad",
+  "Category": "Laptop",
+  "Brand": "Lenovo",
+  "Price": 1300
+},
+{
+  "_id": {
+    "$oid": "507f1f77bcf86cd79943901a"
+  },
+  "ProductName": "Acer Predator",
+  "Category": "Monitor",
+  "Brand": "Acer",
+  "Price": 350
+},
+{
+  "_id": {
+    "$oid": "68c6989bc95699ed17c23220"
+  },
+  "name": "Sample Item",
+  "description": "This is a sample item"
+},
+{
+  "_id": {
+    "$oid": "68c69930b3a77b7e63a0446e"
+  },
+  "name": "Sample Item",
+  "description": "This is a sample item"
+}]

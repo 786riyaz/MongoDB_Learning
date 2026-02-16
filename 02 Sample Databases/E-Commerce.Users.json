@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "507f191e810c19729de860ea"
+  },
+  "Username": "Riyaz Pathan",
+  "MobileNumber": "9909221451",
+  "Age": 25,
+  "Email": "moh.riyazpathan@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "507f191e810c19729de860eb"
+  },
+  "Username": "Arbaz Shaikh",
+  "MobileNumber": "631973814",
+  "Age": 24,
+  "Email": "arbazshaikh@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "507f191e810c19729de860ec"
+  },
+  "Username": "bob_smith",
+  "MobileNumber": "7654321098",
+  "Age": 22,
+  "Email": "bob@example.com"
+},
+{
+  "_id": {
+    "$oid": "507f191e810c19729de860ed"
+  },
+  "Username": "eve_j",
+  "MobileNumber": "6543210987",
+  "Age": 29,
+  "Email": "eve@example.com"
+},
+{
+  "_id": {
+    "$oid": "507f191e810c19729de860ee"
+  },
+  "Username": "charlie_k",
+  "MobileNumber": "5432109876",
+  "Age": 31,
+  "Email": "charlie@example.com"
+}]
