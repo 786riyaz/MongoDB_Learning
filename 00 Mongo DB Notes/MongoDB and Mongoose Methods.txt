@@ -1,0 +1,320 @@
+Below is a **clean, unambiguous separation** of **MongoDB-only methods** vs **Mongoose-only methods**, followed by a **small shared-overlap section** where names look similar but behavior differs.
+
+I’m keeping this **backend-engineer / interview-ready** and **practically complete** (covers what MongoDB & Mongoose actually expose).
+
+---
+
+# 🟢 MongoDB vs 🟣 Mongoose — Method Classification
+
+---
+
+## 🟢 MongoDB ONLY (Native Driver / Mongo Shell)
+
+These methods **exist in MongoDB itself** and **do NOT depend on schemas, models, or ODM features**.
+
+### 📌 Database / Collection Level
+
+```js
+db.createCollection()
+db.dropDatabase()
+db.getCollectionNames()
+db.stats()
+```
+
+---
+
+### 📌 Insert Operations
+
+```js
+insertOne()
+insertMany()
+```
+
+---
+
+### 📌 Read / Query Operations
+
+```js
+find()
+findOne()
+distinct()
+```
+
+---
+
+### 📌 Update Operations
+
+```js
+updateOne()
+updateMany()
+replaceOne()
+```
+
+---
+
+### 📌 Delete Operations
+
+```js
+deleteOne()
+deleteMany()
+```
+
+---
+
+### 📌 Aggregation
+
+```js
+aggregate()
+```
+
+Aggregation stages (Mongo-only):
+
+```js
+$match
+$group
+$project
+$lookup
+$unwind
+$sort
+$limit
+$skip
+$facet
+$addFields
+```
+
+---
+
+### 📌 Indexing
+
+```js
+createIndex()
+getIndexes()
+dropIndex()
+dropIndexes()
+```
+
+---
+
+### 📌 Transactions / Sessions
+
+```js
+startSession()
+commitTransaction()
+abortTransaction()
+```
+
+---
+
+### 📌 Cursor Methods (MongoDB-specific behavior)
+
+```js
+cursor.hasNext()
+cursor.next()
+cursor.toArray()
+cursor.forEach()
+```
+
+---
+
+### 📌 Admin / Utility
+
+```js
+countDocuments()
+estimatedDocumentCount()
+watch()           // change streams
+explain()
+```
+
+---
+
+### 📌 Mongo Shell Only
+
+```js
+use("dbName")
+show dbs
+show collections
+```
+
+---
+
+## 🟣 Mongoose ONLY (ODM Layer – NOT MongoDB)
+
+These **DO NOT exist in MongoDB itself**.
+They are **abstractions provided by Mongoose**.
+
+---
+
+### 📌 Model Creation & Schema
+
+```js
+mongoose.Schema()
+mongoose.model()
+model.discriminator()
+```
+
+---
+
+### 📌 Document-Level Methods
+
+```js
+document.save()
+document.remove()
+document.validate()
+document.toObject()
+document.toJSON()
+```
+
+---
+
+### 📌 Model Helper Methods
+
+```js
+create()              // schema validation + middleware
+findById()
+findByIdAndUpdate()
+findByIdAndDelete()
+findByIdAndRemove()
+exists()
+```
+
+---
+
+### 📌 Middleware (Hooks) ❗ Mongoose-only
+
+```js
+schema.pre()
+schema.post()
+```
+
+Examples:
+
+```js
+pre("save")
+post("find")
+```
+
+---
+
+### 📌 Population (Relations)
+
+```js
+populate()
+```
+
+---
+
+### 📌 Query Helpers
+
+```js
+lean()
+select()
+sort()
+limit()
+skip()
+cursor()   // mongoose cursor wrapper
+```
+
+---
+
+### 📌 Validation & Defaults
+
+```js
+schema.path().validate()
+schema.set("timestamps")
+```
+
+---
+
+### 📌 Virtual Fields
+
+```js
+schema.virtual()
+```
+
+---
+
+### 📌 Index Syncing
+
+```js
+syncIndexes()
+ensureIndexes()
+```
+
+---
+
+### 📌 Connection Helpers
+
+```js
+mongoose.connect()
+mongoose.disconnect()
+mongoose.connection.on()
+```
+
+---
+
+## 🟡 SAME NAME – DIFFERENT MEANING (Important)
+
+These exist in **both**, but behave differently:
+
+| Method        | MongoDB        | Mongoose             |
+| ------------- | -------------- | -------------------- |
+| `find()`      | Returns cursor | Returns query        |
+| `findOne()`   | Plain object   | Document instance    |
+| `updateOne()` | No validation  | Optional validation  |
+| `aggregate()` | Raw pipeline   | Wrapped with model   |
+| `deleteOne()` | Direct delete  | Middleware supported |
+
+---
+
+## ❌ Deprecated / Avoid
+
+### MongoDB
+
+```js
+remove()
+count()
+```
+
+### Mongoose
+
+```js
+Model.remove()
+findAndModify()
+```
+
+---
+
+## 🧠 One-Line Rule (Interview Gold)
+
+> **MongoDB methods operate on raw documents and collections.
+> Mongoose methods add schemas, validation, middleware, and relationships on top of MongoDB.**
+
+---
+
+## 🧾 Ultra-Short Cheat Sheet
+
+### MongoDB = **Database Engine**
+
+* CRUD
+* Aggregation
+* Indexes
+* Transactions
+
+### Mongoose = **ODM Layer**
+
+* Schema
+* Validation
+* Hooks
+* Populate
+* Convenience helpers
+
+---
+
+If you want next:
+
+* ✅ **Side-by-side Mongo vs Mongoose CRUD examples**
+* ✅ **Printable `.txt` / `.md` (you usually prefer this)**
+* ✅ **Interview questions based on these differences**
+* ✅ **Performance comparison (lean vs normal queries)**
+
+Just say which one.
