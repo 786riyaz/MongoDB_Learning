@@ -309,12 +309,3 @@ findAndModify()
 * Convenience helpers
 
 ---
-
-If you want next:
-
-* ✅ **Side-by-side Mongo vs Mongoose CRUD examples**
-* ✅ **Printable `.txt` / `.md` (you usually prefer this)**
-* ✅ **Interview questions based on these differences**
-* ✅ **Performance comparison (lean vs normal queries)**
-
-Just say which one.
