@@ -1,9 +1,3 @@
-Below is a **clear, structured, interview-ready response** you can give as a **MERN Stack Developer**. It is framed the way a senior interviewer expects: cause → impact → solution, covering **both React (frontend) and Node.js (backend)**.
-
----
-
-## Interview Answer (MERN Stack Perspective)
-
 Slowness in a React + Node.js (MERN) application can come from **multiple layers**: frontend, backend, database, network, or infrastructure. I usually diagnose it by isolating each layer.
 
 ---
