@@ -1,15 +1,30 @@
-Comparision ====>
-Relation DB         MongoDB
-Database            Database
-Table               Collection
-Row                 Document
-Column              Field
-===============================================================================================================
-Documentation ::: 
+# MongoDB Notes
+
+---
+
+## Relational DB vs MongoDB Comparison
+
+| Relational Database | MongoDB      |
+|---------------------|-------------|
+| Database            | Database    |
+| Table               | Collection  |
+| Row                 | Document    |
+| Column              | Field       |
+
+---
+
+## Documentation
+
+MongoDB Official Documentation:
+
 https://www.mongodb.com/docs/
-===============================================================================================================
+
+---
+
+## MongoDB Command Categories
+
 | Category           | Example Command            | Description           |
-| ------------------ | -------------------------- | --------------------- |
+|--------------------|----------------------------|-----------------------|
 | Insert             | `db.col.insertOne({...})`  | Add document          |
 | Find               | `db.col.find({...})`       | Retrieve data         |
 | Update             | `$set`, `$inc`             | Modify document       |
@@ -22,9 +37,13 @@ https://www.mongodb.com/docs/
 | Explain            | `.explain()`               | Analyze query plan    |
 | Vector Search      | `$vectorSearch`            | AI-based similarity   |
 | Sharding           | `sh.shardCollection()`     | Scale horizontally    |
-===============================================================================================================
+
+---
+
+## MongoDB Date Operations
+
 | Operation            | MongoDB Command Example                           | Description                    |
-| -------------------- | ------------------------------------------------- | ------------------------------ |
+|----------------------|---------------------------------------------------|--------------------------------|
 | Insert current date  | `{ orderDate: new Date() }`                       | Stores full current date/time  |
 | Insert specific date | `{ orderDate: new Date("2024-12-25") }`           | Stores given date              |
 | Insert specific time | `{ orderDate: new Date("2024-12-25T10:30:00Z") }` | Stores date with exact time    |

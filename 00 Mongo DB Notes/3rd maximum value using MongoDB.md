@@ -109,14 +109,3 @@ db.employees.aggregate([
 ❌ Forgetting duplicates
 ❌ Using `.find().skip()` blindly
 ❌ Not knowing `$group` creates DISTINCT values
-
----
-
-If you want, I can next explain:
-
-* Nth highest value in MongoDB (generic)
-* SQL vs MongoDB ranking comparison
-* Performance optimization with indexes
-* Real interview questions on MongoDB aggregation
-
-Tell me what to continue with.
